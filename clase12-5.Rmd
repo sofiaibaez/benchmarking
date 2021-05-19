@@ -1,0 +1,59 @@
+---
+title: "Titulo del proj de bench"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Benchmarking de 
+
+En este trabajo analizaremos...
+
+```{r}
+cO2<-rnorm(50, 200, 30)
+hist(co2)
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Participacion de cada municipio
+
+```{r}
+muni<- c("capital","godoy cruz","guaymallen","maipú","lujan","las heras")
+munico2<- c(300,150,270,320,412,330)
+pie(munico2, labels = (muni))
+```
+
+### Transporte Publico
+
+```{r}
+
+```
+RSU (Residuos solidos urbanos)
+===================
+```{r}
+
+```
+Resiclado
+==============
+```{r}
+
+```
+RAE(residuos de aparatos electricos y electronicos)
+==============
+```{r}
+
+```
+
+Benchmarking
+=============
